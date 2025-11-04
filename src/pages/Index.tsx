@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import GameRoulette from '@/components/GameRoulette';
 
 const Index = () => {
   const [activeGame, setActiveGame] = useState<string | null>(null);
@@ -67,6 +68,12 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto mb-16 animate-fade-in">
+          <GameRoulette />
         </div>
       </div>
 
