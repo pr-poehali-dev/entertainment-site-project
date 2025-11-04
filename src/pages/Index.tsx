@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
 import GameRoulette from '@/components/GameRoulette';
+import Achievements from '@/components/Achievements';
 
 const Index = () => {
   const [activeGame, setActiveGame] = useState<string | null>(null);
@@ -280,6 +281,10 @@ const Index = () => {
             </div>
           </TabsContent>
         </Tabs>
+      </div>
+
+      <div className="container mx-auto px-4 py-20">
+        <Achievements />
       </div>
 
       <footer className="bg-card border-t border-border mt-20">
