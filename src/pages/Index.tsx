@@ -6,6 +6,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
 import GameRoulette from '@/components/GameRoulette';
 import Achievements from '@/components/Achievements';
+import PokerTable from '@/components/PokerTable';
+import PokerTournaments from '@/components/PokerTournaments';
+import PlayerStats from '@/components/PlayerStats';
 
 const Index = () => {
   const [activeGame, setActiveGame] = useState<string | null>(null);
@@ -285,6 +288,24 @@ const Index = () => {
 
       <div className="container mx-auto px-4 py-20">
         <Achievements />
+      </div>
+
+      <div className="container mx-auto px-4 py-20">
+        <div className="mb-16">
+          <PokerTable />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-20">
+        <PokerTournaments />
+      </div>
+
+      <div className="container mx-auto px-4 py-20">
+        <div className="mb-8 text-center">
+          <h2 className="text-4xl font-bold mb-2">Статистика игрока</h2>
+          <p className="text-muted-foreground text-lg">Отслеживай свой прогресс и достижения</p>
+        </div>
+        <PlayerStats />
       </div>
 
       <footer className="bg-card border-t border-border mt-20">
